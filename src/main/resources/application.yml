@@ -1,0 +1,27 @@
+spring:
+  datasource:
+    generate-unique-name: 'false'
+    username: hyeon8571
+    initialization-mode: never
+    url: jdbc:mariadb://localhost:3306/AFL?characterEncoding=UTF-8&serverTimezone=UTC
+    password: shvhsy8571@
+  h2:
+    console:
+      enabled: 'true'
+  jpa:
+    properties:
+      hibernate:
+        format_sql: 'true'
+    defer-datasource-initialization: 'true'
+    hibernate:
+      ddl-auto: update
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: DEBUG
+        type:
+          descriptor:
+            sql:
+              BasicBinder: TRACE
+
